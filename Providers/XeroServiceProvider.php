@@ -74,8 +74,8 @@ class XeroServiceProvider extends ServiceProvider
             return new \XeroPHP\Models\Accounting\Attachment();
         });
 
-        $this->app->bind('XeroPhone', function(){
-            return new \XeroPHP\Models\Accounting\Phone();
+        $this->app->bind('XeroItem', function(){
+            return new \XeroPHP\Models\Accounting\Item();
         });
     }
 }
